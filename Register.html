@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register Page</title>
+	<style >
+		.inp{
+			margin-bottom: 8px;
+		}
+	</style>
+</head>
+<body>
+
+
+	<h2>Register Now</h2>
+	<form action="Thankyou.html" method="get">
+	<input type="hidden" name="UserId" value="1">
+	<label><b>First Name</b></label>
+	<input class="inp" type="text" placeholder="Enter your first name" name="FirstName" required ><br>
+	<label><b>Last Name</b></label>
+	<input class="inp" type="text" placeholder="Enter your last name" name="LastName" required ><br>
+	<label><b>Email</b></label>
+	<input class="inp" type="email" placeholder="Enter your email" name="UserEmail" required ><br>
+	<label><b>Password</b></label>
+	<input class="inp" type="Password" placeholder="Enter your password" name="UserPassword" accesskey="a" required ><br>
+	<label><b>Repeat </b></label>
+	<input class="inp" type="Password" placeholder="Confirm Password" name="ConfirmPassword" required ><br>
+	<label><b>Birth Date </b></label>
+	<input class="inp" type="date"  name="BirthDate"  ><br>
+	<label><b>Select Picture </b></label>
+	<input class="inp" type="file"  name="UserPicture"  ><br>
+	<fieldset>
+		<legend>Gender</legend>
+		<input type="radio"  name="gender" value="m"  >Male
+		<input type="radio"  name="gender" value="f" >Famile
+	</fieldset><br>
+	
+	<h3>Select Department</h3>
+	<select name="faculty" multiple>
+		<option value="is">IS</option>
+		<option value="it" selected>IT</option>
+		<option value="cs">CS</option>
+	</select>
+	<br>
+	<h4>Interists</h4>
+	<input type="checkbox" name="interist">Reading
+	<input type="checkbox" name="interist">Sports
+	<input type="checkbox" name="interist">Learning
+	<br>
+	<textarea placeholder="About you" name="UserComments"  ></textarea>
+	<br>
+	<input type="submit" name="SubmitForm">
+	<input type="reset" name="reset">
+
+		
+	
+
+</form>
+</body>
+</html>
